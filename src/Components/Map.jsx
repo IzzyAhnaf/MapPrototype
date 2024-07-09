@@ -17,7 +17,7 @@ const blueIcon = new L.Icon({
 const redIcon = new L.Icon({
     iconUrl: 'placeholder.png',
     iconSize: [34, 34],
-    iconAnchor: [25, 34],
+    iconAnchor: [20, 34],
     popupAnchor: [1, -34],
 });
 
