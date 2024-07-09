@@ -7,10 +7,17 @@ import CustomWidth from '../function/CustomWidth';
 
 const ORS_KEY = '5b3ce3597851110001cf6248be24502331b243318274ccf1d117148e'; // Ganti dengan API Key Anda
 
+const blueIcon = new L.Icon({
+    iconUrl: '149060.png',
+    iconSize: [34, 34],
+    iconAnchor: [20, 34],
+    popupAnchor: [1, -34],
+});
+
 const redIcon = new L.Icon({
     iconUrl: 'placeholder.png',
     iconSize: [34, 34],
-    iconAnchor: [10, 34],
+    iconAnchor: [25, 34],
     popupAnchor: [1, -34],
 });
 
@@ -117,7 +124,9 @@ const UserLocationMarker = ({ onLocationFound, Destination, type }) => {
     return (
         <>
             {position !== null && (
-                <Marker position={position}>
+                <Marker position={position} 
+                icon={blueIcon}
+                >
                     <Popup>You are here</Popup>
                 </Marker>
             )}
