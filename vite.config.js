@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   base: '/MapPrototype/',
-  server: {
-    host: '192.168.0.142',
-    port: 3000
-  }
+  // server: {
+  //   host: '192.168.0.142',
+  //   port: 3000
+  // }
 })
